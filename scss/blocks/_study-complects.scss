@@ -1,0 +1,163 @@
+.study-complects {
+  position: relative;
+  margin-top: 43px;
+  overflow: visible;
+  &__background {
+    position: absolute;
+    width: 60%;
+    top: -15px;
+    right: 0;
+    z-index: -1;
+    @include mobile {
+      width: 75%;
+      top: 15px;
+    }
+  }
+  &__cards {
+    margin-top: 90px;
+    background: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    @include tablet {
+      margin-top: 51px;
+    }
+    @include mobile {
+      margin-top: 38px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 20px;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    & img {
+      width: 100%;
+      height: auto;
+    }
+    &_info {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & p {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        @include tablet {
+          margin-top: 14px;
+          font-size: 14px;
+          line-height: 17px;
+        }
+        @include mobile {
+          font-size: 10px;
+          line-height: 12px;
+          margin-top: 10px;
+        }
+      }
+      & .button_orange {
+        margin-top: 30px;
+        width: 100%;
+        padding: 10px 0;
+        @include tablet {
+          margin-top: 14px;
+          font-size: 14px;
+          line-height: 17px;
+        }
+        @include mobile {
+          margin-top: 10px;
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+  &__info {
+    margin-top: 50px;
+    max-width: 900px;
+    @include tablet {
+      margin-top: 30px;
+    }
+    @include mobile {
+      margin-top: 20px;
+    }
+    & p {
+      margin-bottom: 10px;
+      &:first-child {
+        margin-bottom: 13px;
+      }
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #171717;
+      @include tablet {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 16px;
+        &:first-child {
+          margin-bottom: 16px;
+        }
+      }
+      @include mobile {
+        margin-bottom: 20px;
+        &:first-child {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    & ul {
+      margin: 23px 0 30px;
+      @include tablet {
+        margin: 20px 0 20px;
+      }
+      @include mobile {
+        margin: 24px 0 20px;
+      }
+      & li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        & svg {
+          margin-right: 16px;
+          margin-top: 3px;
+        }
+        & p {
+          margin: 0;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000000;
+        }
+        @include tablet {
+          margin-bottom: 12px;
+          & svg {
+            margin-right: 10px;
+          }
+          & p {
+            font-size: 14px;
+          }
+        }
+        @include mobile {
+          & svg {
+            margin-right: 6px;
+            width: 15px;
+            height: 10px;
+          }
+          & p {
+            font-weight: 400;
+            color: #171717;
+          }
+        }
+      }
+    }
+    & .whatsup-button {
+      margin-top: 50px;
+      @include tablet {
+        margin-top: 30px;
+      }
+    }
+  }
+}

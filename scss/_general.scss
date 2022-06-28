@@ -5,6 +5,38 @@
 }
 body {
 }
+.whatsup-button {
+  display: block;
+  width: fit-content;
+  padding: 15px 30px;
+  border: 2px solid #2dd067;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2dd067;
+  & svg {
+    margin-left: 10px;
+  }
+  &:hover {
+    cursor: pointer;
+    border-color: #12b54c;
+    color: #12b54c;
+    & svg path {
+      fill: #12b54c;
+    }
+  }
+  @include tablet {
+    padding: 14px 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  @include mobile {
+    padding: 11px 10px;
+  }
+}
 .button_orange {
   display: block;
   width: fit-content;
@@ -39,6 +71,25 @@ body {
     }
     @include mobile {
       margin-top: 30px;
+    }
+  }
+}
+.nuv {
+  & p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6b6b6b;
+    & a {
+      color: #6b6b6b;
+      text-decoration: none;
+      &:hover {
+        color: #ed6b40;
+      }
+    }
+    @include mobile {
+      font-size: 10px;
+      line-height: 12px;
     }
   }
 }
@@ -138,12 +189,10 @@ body {
   overflow: hidden;
 
   @include tablet {
-    width: 100%;
-    padding: 0 20px;
+    width: 95%;
   }
   @include mobile {
-    width: 100%;
-    padding: 0 16px;
+    width: 90%;
   }
 }
 .link {
