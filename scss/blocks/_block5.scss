@@ -1,0 +1,179 @@
+.block5 {
+  position: relative;
+  overflow: visible;
+  margin-top: 72px;
+  @include tablet {
+    margin-top: 60px;
+  }
+  @include mobile {
+    margin-top: 40px;
+  }
+  display: grid;
+  grid-template-columns: auto 408px;
+  @include tablet {
+    grid-template-columns: auto 324px;
+  }
+  @include mobile {
+    display: block;
+  }
+  &__background {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    & img {
+      @media (max-width: 1000px) {
+        height: auto;
+      }
+    }
+    @include tablet {
+      width: auto;
+      height: 413px;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  &__form {
+    margin-left: 0 auto;
+    padding: 50px 40px 28px;
+    @include tablet {
+      padding: 20px 40px 20px;
+    }
+    @include mobile {
+      padding: 25px 22px 20px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h2 {
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      @include tablet {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      @include mobile {
+        margin-bottom: 27px;
+      }
+    }
+    & textarea {
+      resize: none;
+      height: 147px;
+      @include tablet {
+        height: 101px;
+      }
+    }
+    & input,
+    textarea {
+      width: 100%;
+      margin-bottom: 24px;
+      border: 1px solid #9a9a9a;
+      outline: none;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      &::placeholder {
+        color: #8a8a8a;
+      }
+      padding: 15px 21px;
+      &:invalid:not(:focus):visited {
+        border: 1px solid #ff2e2e;
+      }
+      @include tablet {
+        padding: 12px 15px;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 16px;
+      }
+    }
+    & .checkbox {
+      @include tablet {
+        margin-top: 4px;
+      }
+      & a {
+        display: inline;
+        color: #171717;
+      }
+      & p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #171717;
+        @include tablet {
+          font-size: 8px;
+          line-height: 10px;
+        }
+      }
+      position: relative;
+      display: flex;
+      align-items: center;
+      &__real {
+        display: none;
+        &:checked + .checkbox__custom::before {
+          display: block;
+        }
+      }
+      &__custom {
+        position: relative;
+        min-width: 26px;
+        height: 26px;
+        border: 1px solid #ed6b40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 6px;
+        &::before {
+          content: url(../../img/svg/okay.svg);
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 55%;
+          left: 53%;
+          display: none;
+        }
+        @include tablet {
+          min-width: 18px;
+          height: 18px;
+          margin-right: 10px;
+        }
+      }
+    }
+    & .button_orange {
+      margin-top: 32px;
+      @include tablet {
+        margin-top: 30px;
+      }
+      @include mobile {
+        margin-top: 20px;
+      }
+    }
+  }
+  & .button_up {
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    background: #f3f3f3;
+    border: 3px dashed #ed6b40;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%, 15%);
+    @media (max-width: 1300px) {
+      transform: translate(20%, 15%);
+    }
+    @media (max-width: 1250px) {
+      transform: translate(0%, 15%);
+    }
+    right: 0;
+    bottom: 0;
+    @include tablet {
+      display: none;
+    }
+  }
+}

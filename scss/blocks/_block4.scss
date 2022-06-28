@@ -1,0 +1,115 @@
+.block4 {
+  margin-top: 136px;
+  @include tablet {
+    margin-top: 62px;
+  }
+  @include mobile {
+    margin-top: 50px;
+  }
+  & .block__info {
+    justify-content: flex-start;
+  }
+  &__list {
+    margin-top: 39px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    @include tablet {
+      margin-top: 28px;
+    }
+    @include mobile {
+      grid-column-gap: 9px;
+      margin-top: 24px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    & img {
+      width: 100%;
+      height: auto;
+    }
+    &_info {
+      flex-grow: 1;
+      padding: 20px 16px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include tablet {
+        padding: 12px 0px 14px;
+      }
+      @include mobile {
+        padding: 6px 0px 8px;
+      }
+    }
+    & h3 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      @include tablet {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+      }
+      @include mobile {
+        font-size: 8px;
+        line-height: 10px;
+      }
+    }
+    &_bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      @include mobile {
+        margin-top: 10px;
+        flex-direction: column;
+      }
+      & a {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: $grey1;
+        text-decoration: none;
+        & svg {
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+        @include tablet {
+          font-weight: 500;
+        }
+        @include mobile {
+          font-size: 8px;
+          line-height: 10px;
+          & svg {
+            margin-left: 6px;
+          }
+        }
+      }
+      & p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #171717;
+        @include tablet {
+          font-size: 10px;
+          line-height: 12px;
+        }
+        @include mobile {
+          font-size: 6px;
+          line-height: 7px;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+  & .button_orange {
+    margin: 64px auto 0;
+    @include tablet {
+      margin-top: 40px;
+    }
+  }
+}

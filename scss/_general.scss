@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+body {
+}
+.button_orange {
+  display: block;
+  width: fit-content;
+  border: none;
+  width: 180px;
+  padding: 18px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #ed6b40;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    background: #fc7a4f;
+  }
+  &:active {
+    background: #de5c31;
+  }
+  @include tablet {
+    padding: 13px 42px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  &_no-desktop {
+    display: none;
+    margin: 40px auto 0;
+    @include tablet {
+      display: block;
+    }
+    @include mobile {
+      margin-top: 30px;
+    }
+  }
+}
+.block {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & h2 {
+      position: relative;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #000000;
+      padding-left: 98px;
+      &::before {
+        content: "";
+        width: 82px;
+        height: 3px;
+        background: #ed6b40;
+        position: absolute;
+        top: calc(39px / 2);
+        left: 0;
+      }
+    }
+    & a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+    }
+    @include tablet {
+      justify-content: flex-start;
+      & a {
+        display: none;
+      }
+      & h2 {
+        font-size: 24px;
+        line-height: 29px;
+        padding-left: 125px;
+        &::before {
+          top: calc(29px / 2);
+          width: 105px;
+        }
+      }
+    }
+    @include mobile {
+      & h2 {
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 50px;
+        width: 100%;
+        &::before {
+          width: 40px;
+          position: absolute;
+          top: calc(20px / 2);
+        }
+      }
+    }
+  }
+  &__info {
+    & h3 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      @include tablet {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      @include mobile {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    & p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #171717;
+      @include tablet {
+        font-size: 14px;
+        line-height: 23px;
+      }
+      @include mobile {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include tablet {
+    width: 100%;
+    padding: 0 20px;
+  }
+  @include mobile {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+.link {
+  text-align: center;
+  text-decoration-line: underline;
+  color: #ed6b40;
+  &:hover {
+    color: #fc7a4f;
+  }
+}

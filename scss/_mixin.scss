@@ -1,0 +1,45 @@
+@import "./mixin-fonts";
+@import "./mixin-animations";
+
+@mixin tablet {
+  @media (max-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin button($vertical-padding: 18px, $horizontal-padding: 61px) {
+  background: #ed6b40;
+  padding: $vertical-padding $horizontal-padding;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  &:hover {
+    cursor: pointer;
+    background: #fc7a4f;
+  }
+  &:active {
+    background: #de5c31;
+  }
+}
+
+// @mixin transition ($time: 500ms,$delay: 0ms) {
+//     -moz-transition: all $time $delay;
+//     -webkit-transition: all $time $delay;
+//     -o-transition: all $time $delay;
+//     -ms-transition: all $time $delay;
+//     transition: all $time $delay;
+// }
+
+// @mixin placeholder {
+//     &::-webkit-input-placeholder { @content; }
+//     &:-moz-placeholder           { @content; }
+//     &::-moz-placeholder          { @content; }
+//     &:-ms-input-placeholder      { @content; }
+// }
