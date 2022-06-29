@@ -76,7 +76,7 @@ footer {
     background: #de5c31;
   }
   @include tablet {
-    padding: 13px 42px;
+    padding: 13px 0px;
     font-weight: 600;
     font-size: 14px;
     line-height: 23px;
@@ -239,6 +239,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  @include mobile {
+    align-items: flex-start;
+  }
   & p {
     font-weight: 400;
     font-size: 12px;
@@ -252,12 +255,27 @@ footer {
     border: 1px solid #000000;
     width: fit-content;
     height: 40px;
+    @include tablet {
+      height: 30px;
+    }
+    @include mobile {
+      height: 20px;
+      margin-top: 0;
+    }
     & p {
       font-weight: 500;
       font-size: 18px;
       line-height: 22px;
       text-align: center;
       color: #000000;
+      @include tablet {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      @include mobile {
+        font-size: 14px;
+        line-height: 17px;
+      }
     }
     & button {
       border: none;
@@ -268,6 +286,12 @@ footer {
       padding: 13px 21px;
       &:hover {
         cursor: pointer;
+      }
+      @include tablet {
+        padding: 5px 15px;
+      }
+      @include mobile {
+        padding: 3px 10px;
       }
     }
   }

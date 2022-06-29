@@ -4,12 +4,24 @@
     margin-top: 20px;
   }
   &__list {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
+    @include tablet {
+      width: 88.8%;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
   &__item {
     padding: 24px 0px;
     border-bottom: 1px solid #000000;
+    @include tablet {
+      padding: 20px 0px;
+    }
+    @include mobile {
+      padding: 16px 0px;
+    }
     & .button_orange {
       display: flex;
       align-items: center;
@@ -30,9 +42,31 @@
           fill: #ed6b40;
         }
       }
+      @include tablet {
+        padding: 11px 14px;
+        font-size: 12px;
+        line-height: 15px;
+        min-width: 0;
+        width: 189px;
+        & svg {
+          margin-left: 10px;
+        }
+      }
+      @include mobile {
+        padding: 6px 7px;
+        width: 100px;
+        font-size: 8px;
+        line-height: 10px;
+        & svg {
+          display: none;
+        }
+      }
     }
     & .counter {
       margin-top: 11px;
+      @include mobile {
+        margin-top: 4px;
+      }
     }
   }
 }

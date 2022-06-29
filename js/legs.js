@@ -158,9 +158,17 @@ function renderItem(item, index) {
           <div class="swiper-wrapper">
             ${slides}
           </div>
-          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-button swiper-button-prev">
+            <svg width="20" height="37" viewBox="0 0 20 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 36L2 18.5L19 1" stroke="#B8B8B8" stroke-width="2" />
+            </svg>
+          </div>
           <div class="swiper-pagination"></div>
-          <div class="swiper-button swiper-button-next"></div>
+          <div class="swiper-button swiper-button-next">
+            <svg width="20" height="37" viewBox="0 0 20 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L18 18.5L1 36" stroke="#B8B8B8" stroke-width="2" />
+            </svg>
+          </div>
         </div>
       </div>
 
