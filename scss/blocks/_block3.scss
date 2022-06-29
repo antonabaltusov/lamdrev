@@ -137,7 +137,7 @@
         position: relative;
         padding-left: 21px + 16px;
         &::before {
-          content: url(../../img/svg/list-style.svg);
+          content: url(./../img/svg/list-style.svg);
           position: absolute;
           top: 2px;
           left: 0;
@@ -154,7 +154,7 @@
         @include mobile {
           padding-left: 15px + 6px;
           &::before {
-            content: url(../../img/svg/list-style-mini.svg);
+            content: url(./../img/svg/list-style-mini.svg);
             top: 0;
           }
         }
@@ -167,7 +167,7 @@
         line-height: 24px;
         text-transform: uppercase;
         &::before {
-          content: url(../../img/svg/Лого-mini.svg);
+          content: url(./../img/svg/logo-mini.svg);
           display: inline;
           vertical-align: middle;
           margin-right: 8px;

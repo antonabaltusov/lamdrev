@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <script src="./swiper/swiper-bundle.min.js" defer></script>
-  <script src="./script.js" defer></script>
+  <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -108,7 +108,7 @@
         <div class="block3__main_photo">
           <div class="photo photo_top">
             <div class="photo_top_logo">
-              <img src="../img/svg/Лого-mini.svg" alt="лого">
+              <img src="./img/svg/logo-mini.png" alt="лого">
             </div>
             <img width="400px" height="388px" src="./img/Rectangle19.webp" data-originalres="jpg" alt="">
           </div>

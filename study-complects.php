@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ламдрев</title>
+  <title>Ученические комплекты</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -23,21 +23,21 @@
         <img src="./img/Rectangle83.webp" data-originalres="jpg" alt="">
         <div class="study-complects__card_info">
           <p>Для школьных групп и начальных классов</p>
-          <a class="button_orange" href="">Перейти к товарам</a>
+          <a class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="study-complects__card">
         <img src="./img/Rectangle84.webp" data-originalres="jpg" alt="">
         <div class="study-complects__card_info">
           <p>Для образовательных учреждений</p>
-          <a class="button_orange" href="">Перейти к товарам</a>
+          <a class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="study-complects__card">
         <img src="./img/Rectangle84.webp" data-originalres="jpg" alt="">
         <div class="study-complects__card_info">
           <p>Индивидуальные проекты</p>
-          <a class="button_orange" href="">Перейти к товарам</a>
+          <a class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
     </div>
@@ -84,7 +84,7 @@
       <p>Стоимость типовой продукции указана в каталоге, изделия нестандартных размеров или конструкций рассчитывается
         индивидуально. Чтобы уточнить цену и заказать комплекты для ученической мебели с доставкой по России, звоните
         нам +7 (912) 758-47-33.</p>
-      <a class="whatsup-button">
+      <a href="" class="whatsup-button">
         Написать в WhatsApp
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"

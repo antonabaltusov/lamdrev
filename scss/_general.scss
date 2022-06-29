@@ -3,7 +3,25 @@
   font-family: "Montserrat";
   font-style: normal;
 }
+html {
+  height: 100%;
+}
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+header {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+main {
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 1 0 auto;
+}
+footer {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
 }
 .whatsup-button {
   display: block;
@@ -71,6 +89,20 @@ body {
     }
     @include mobile {
       margin-top: 30px;
+    }
+  }
+  &-card {
+    padding: 10px 0;
+    width: 100%;
+    @include tablet {
+      font-size: 14px;
+      line-height: 17px;
+      padding: 10px 0px;
+    }
+    @include mobile {
+      font-size: 10px;
+      line-height: 12px;
+      padding: 6px 0px;
     }
   }
 }
@@ -201,5 +233,42 @@ body {
   color: #ed6b40;
   &:hover {
     color: #fc7a4f;
+  }
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  & p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $grey1;
+  }
+  &__block {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+    width: fit-content;
+    height: 40px;
+    & p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #000000;
+    }
+    & button {
+      border: none;
+      background: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 21px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }

@@ -1,0 +1,38 @@
+.catalog {
+  margin-top: 43px;
+  @include tablet {
+    margin-top: 20px;
+  }
+  &__list {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  &__item {
+    padding: 24px 0px;
+    border-bottom: 1px solid #000000;
+    & .button_orange {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 14px 13px 15px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      min-width: 200px;
+      & svg {
+        margin-left: 6px;
+      }
+      &.white {
+        background-color: white;
+        border: 1px solid #ed6b40;
+        color: #ed6b40;
+        & svg path {
+          fill: #ed6b40;
+        }
+      }
+    }
+    & .counter {
+      margin-top: 11px;
+    }
+  }
+}

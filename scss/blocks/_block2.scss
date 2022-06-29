@@ -45,6 +45,7 @@
       left: 0;
       bottom: 0;
       @include tablet {
+        display: inline-flex;
         margin-top: 32px;
         position: relative;
         background: white;
@@ -55,7 +56,7 @@
         text-decoration-line: underline;
         color: $grey2;
         &::after {
-          content: url(../../img/svg/Arrow-right.svg);
+          content: url(./../img/svg/Arrow-right.svg);
           vertical-align: middle;
           margin-left: 6px;
           padding-top: 2px;

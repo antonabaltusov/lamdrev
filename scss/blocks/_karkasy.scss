@@ -1,0 +1,120 @@
+.karkasy {
+  margin-top: 43px;
+  @include tablet {
+    margin-top: 30px;
+  }
+  @include mobile {
+    margin-top: 20px;
+  }
+  &__cards {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 30px;
+    }
+    @include mobile {
+      margin-top: 34px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 20px;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    & img {
+      width: 100%;
+      height: auto;
+    }
+    &_info {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & p {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        @include tablet {
+          margin-top: 10px;
+          font-size: 14px;
+          line-height: 17px;
+        }
+        @include mobile {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+      & .button_orange-card {
+        margin-top: 12px;
+        @include tablet {
+          margin-top: 20px;
+        }
+        @include mobile {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  &__info {
+    margin-top: 50px;
+    @include tablet {
+      margin-top: 40px;
+    }
+    @include mobile {
+      margin-top: 30px;
+    }
+    & p {
+      max-width: 945px;
+      margin-bottom: 16px;
+      &:first-child {
+        margin-bottom: 12px;
+      }
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      @include tablet {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 16px;
+        &:first-child {
+          margin-bottom: 16px;
+        }
+      }
+    }
+    & .imgs {
+      margin: 23px 0 30px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 20px;
+      & img {
+        width: 100%;
+      }
+      @include tablet {
+        margin: 20px 0 20px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include mobile {
+        display: block;
+        margin: 40px 0 32px;
+        & img:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+    & .whatsup-button {
+      margin-top: 50px;
+      @include tablet {
+        margin-top: 30px;
+      }
+    }
+  }
+}
