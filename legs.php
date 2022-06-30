@@ -109,7 +109,7 @@
         </div>
       </div>
     </div>
-    <button class="button_orange">Показать еще</button>
+    <button id="more-items" class="button_orange">Показать еще</button>
 
   </main>
 
