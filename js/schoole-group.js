@@ -128,4 +128,5 @@ function renderItem(item) {
       </div>
       `;
 }
-const list = new catalog(renderItem);
+//const list = new catalog(renderItem);
+this.swiper = new Swiper(".swiper", optionSwiperForCatalog);

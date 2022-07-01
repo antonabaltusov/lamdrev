@@ -1,0 +1,119 @@
+.karkasy.karkasy-catalog {
+  margin-top: 43px;
+  @include tablet {
+    margin-top: 30px;
+  }
+  @include mobile {
+    margin-top: 20px;
+  }
+  & h1 {
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    @include tablet {
+      margin-top: 47px;
+      letter-spacing: normal;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    @include mobile {
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  & .karkasy__cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    @include tablet {
+      margin-top: 30px;
+      grid-column-gap: 30px;
+      grid-row-gap: 45px;
+    }
+    @include mobile {
+      margin-top: 34px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 20px;
+    }
+  }
+  & .karkasy__card {
+    display: flex;
+    flex-direction: column;
+    & img {
+      width: 100%;
+      height: auto;
+    }
+    &_info {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 10px 22px;
+      @include tablet {
+        padding: 10px 0 0;
+      }
+      & p {
+        margin-top: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #000000;
+        @include tablet {
+          font-size: 14px;
+          line-height: 17px;
+        }
+        @include mobile {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+      & .button_orange {
+        width: 100%;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        & svg {
+          margin-left: 10px;
+        }
+        @include tablet {
+          width: 75%;
+          padding: 9px 0px;
+          margin: 20px auto 0;
+          font-size: 10px;
+          line-height: 12px;
+          & svg {
+            margin-left: 6px;
+          }
+          & span {
+            display: none;
+          }
+        }
+        @include mobile {
+          width: 70%;
+          margin: 16px auto 0;
+          padding: 6px 0px 6px;
+        }
+      }
+    }
+  }
+  & .whatsup {
+    margin-top: 120px;
+    @include tablet {
+      margin-top: 50px;
+    }
+  }
+}

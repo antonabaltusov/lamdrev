@@ -18,19 +18,19 @@
     ?>
   <main>
     <div class="block1 container">
-      <a href="" class="block1__item">
+      <a href="/study-complects.php" class="block1__item">
         <img src="./img/Rectangle6.webp" data-originalres="jpg" alt="Ученические комплекты">
         <div class="block1__item_name">
           <h3>Ученические комплекты</h3>
         </div>
       </a>
-      <a href="" class="block1__item">
+      <a href="/karkasy.php" class="block1__item">
         <img src="./img/Rectangle7.webp" data-originalres="jpg" alt="Каркасы фанера">
         <div class="block1__item_name">
           <h3>Каркасы фанера</h3>
         </div>
       </a>
-      <a href="" class="block1__item">
+      <a href="/legs.php" class="block1__item">
         <img src="./img/Rectangle8.webp" data-originalres="jpg" alt="Ножки">
         <div class="block1__item_name">
           <h3>Ножки</h3>

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <script src="./swiper/swiper-bundle.min.js" defer></script>
+  <script src="./js/common.js" defer></script>
   <script src="./js/legs.js" defer></script>
 </head>
 

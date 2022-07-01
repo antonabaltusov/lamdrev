@@ -3,6 +3,9 @@
   font-family: "Montserrat";
   font-style: normal;
 }
+img::selection {
+  background: transparent;
+}
 html {
   height: 100%;
 }
@@ -23,36 +26,55 @@ footer {
   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
   flex: 0 0 auto;
 }
-.whatsup-button {
-  display: block;
-  width: fit-content;
-  padding: 15px 30px;
-  border: 2px solid #2dd067;
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #2dd067;
-  & svg {
-    margin-left: 10px;
-  }
-  &:hover {
-    cursor: pointer;
-    border-color: #12b54c;
-    color: #12b54c;
-    & svg path {
-      fill: #12b54c;
+.whatsup {
+  &-button {
+    display: block;
+    width: fit-content;
+    padding: 15px 30px;
+    border: 2px solid #2dd067;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2dd067;
+    text-decoration: none;
+    & svg {
+      margin-left: 10px;
+    }
+    &:hover {
+      cursor: pointer;
+      border-color: #12b54c;
+      color: #12b54c;
+      & svg path {
+        fill: #12b54c;
+      }
+    }
+    @include tablet {
+      padding: 14px 10px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 23px;
+    }
+    @include mobile {
+      padding: 11px 10px;
     }
   }
-  @include tablet {
-    padding: 14px 10px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 23px;
-  }
-  @include mobile {
-    padding: 11px 10px;
+  & p {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #171717;
+    @include tablet {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    @include mobile {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 }
 .button_orange {
