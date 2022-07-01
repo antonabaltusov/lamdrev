@@ -40,50 +40,24 @@
         min-width: 0;
         width: 100%;
       }
-    }
-    &.popup {
-      position: fixed;
-      width: 100%;
-      height: 95%;
-      background: rgba(15, 15, 15, 0.6);
-      backdrop-filter: blur(17px);
-      z-index: 50;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       & .swiper {
-        width: 1200px;
-        height: 100%;
-        padding: 150px 0;
-        &-wraper {
-          &::selection {
-            display: none;
-          }
-        }
-        & .popup-close {
-          position: absolute;
-          top: 150px;
-          right: 103px;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 20px;
-          color: #ffffff;
-          background: inherit;
-          border: none;
-          z-index: 100;
-          &:hover {
-            cursor: pointer;
-          }
-        }
         &-slide {
           & .img-wrapper {
-            width: auto;
-            height: 100%;
+            width: 100%;
+            height: 449px;
             display: flex;
             justify-content: center;
+            @include tablet {
+              height: 260px;
+            }
             & img {
               &:hover {
-                cursor: auto;
+                cursor: zoom-in;
+              }
+              @include tablet {
+                &:hover {
+                  cursor: auto;
+                }
               }
               width: auto;
               height: 100%;
@@ -97,123 +71,150 @@
           &::after {
             display: none;
           }
-          width: auto;
-          & svg {
-            width: 69px;
-            height: 138px;
-            & path {
-              stroke: white;
-            }
-          }
-          top: 50%;
+          top: 35%;
           &-prev {
-            left: 103px;
+            left: 20px;
           }
           &-next {
-            right: 103px;
+            right: 20px;
+          }
+          @include mobile {
+            display: none;
           }
         }
         &-pagination {
           margin-top: 14px;
           position: static;
-          display: none;
+          display: flex;
           justify-content: space-between;
+          @include tablet {
+            margin-top: 20px;
+          }
+          @include tablet {
+            margin-top: 16px;
+          }
+          &-line {
+            display: none;
+            margin-top: 20px;
+            & .swiper-pagination-bullet {
+              & img {
+                display: none;
+              }
+              margin: 0 5px;
+              max-width: 58px;
+              height: 2px;
+              background: #d5d5d5;
+              &-active {
+                background: #ed6b40;
+              }
+            }
+            @include mobile {
+              display: block;
+            }
+          }
 
           &-bullet {
             width: 30%;
-            height: auto;
+            height: fit-content;
             opacity: 1;
             border-radius: 0;
-          }
-        }
-      }
-    }
-    & .swiper {
-      &-slide {
-        & .img-wrapper {
-          width: 100%;
-          height: 449px;
-          display: flex;
-          justify-content: center;
-          @include tablet {
-            height: 260px;
-          }
-          & img {
-            &:hover {
-              cursor: zoom-in;
-            }
-            @include tablet {
-              &:hover {
-                cursor: auto;
-              }
-            }
-            width: auto;
-            height: 100%;
-          }
-        }
-      }
-      &-window {
-        width: 100%;
-      }
-      &-button {
-        &::after {
-          display: none;
-        }
-        top: 35%;
-        &-prev {
-          left: 20px;
-        }
-        &-next {
-          right: 20px;
-        }
-        @include mobile {
-          display: none;
-        }
-      }
-      &-pagination {
-        margin-top: 14px;
-        position: static;
-        display: flex;
-        justify-content: space-between;
-        @include tablet {
-          margin-top: 20px;
-        }
-        @include tablet {
-          margin-top: 16px;
-        }
-        &-line {
-          display: none;
-          margin-top: 20px;
-          & .swiper-pagination-bullet {
+            background: inherit;
             & img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+      &.popup {
+        position: fixed;
+        width: 100%;
+        height: 95%;
+        background: rgba(15, 15, 15, 0.6);
+        backdrop-filter: blur(17px);
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .swiper {
+          width: 1200px;
+          height: 100%;
+          padding: 150px 0;
+          &-wraper {
+            &::selection {
               display: none;
             }
-            margin: 0 5px;
-            max-width: 58px;
-            height: 2px;
-            background: #d5d5d5;
-            &-active {
-              background: #ed6b40;
+          }
+          & .popup-close {
+            position: absolute;
+            top: 150px;
+            right: 103px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #ffffff;
+            background: inherit;
+            border: none;
+            z-index: 100;
+            &:hover {
+              cursor: pointer;
             }
           }
-          @include mobile {
-            display: block;
+          &-slide {
+            & .img-wrapper {
+              width: auto;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              & img {
+                &:hover {
+                  cursor: auto;
+                }
+                width: auto;
+                height: 100%;
+              }
+            }
           }
-        }
-
-        &-bullet {
-          width: 30%;
-          height: fit-content;
-          opacity: 1;
-          border-radius: 0;
-          background: inherit;
-          & img {
+          &-window {
             width: 100%;
-            height: auto;
+          }
+          &-button {
+            &::after {
+              display: none;
+            }
+            width: auto;
+            & svg {
+              width: 69px;
+              height: 138px;
+              & path {
+                stroke: white;
+              }
+            }
+            top: 50%;
+            &-prev {
+              left: 103px;
+            }
+            &-next {
+              right: 103px;
+            }
+          }
+          &-pagination {
+            margin-top: 14px;
+            position: static;
+            display: none;
+            justify-content: space-between;
+
+            &-bullet {
+              width: 30%;
+              height: auto;
+              opacity: 1;
+              border-radius: 0;
+            }
           }
         }
       }
     }
+
     &_info {
       max-width: 590px;
       @include mobile {
