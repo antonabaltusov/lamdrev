@@ -1,0 +1,299 @@
+.cart {
+  margin-top: 43px;
+  @include tablet {
+    margin-top: 20px;
+  }
+  & .button_orange {
+    margin-top: 110px;
+    padding: 18px 62px;
+    min-width: 286px;
+    width: auto;
+    @include tablet {
+      min-width: 0;
+      margin-top: 70px;
+      padding: 14px 18px;
+    }
+    @include mobile {
+      margin-top: 40px;
+      padding: 7px 8px;
+    }
+    &.cart {
+      margin-top: 50px;
+      @include tablet {
+        margin-top: 40px;
+      }
+      @include tablet {
+        margin-top: 54px;
+      }
+    }
+  }
+  & h1 {
+    margin-top: 30px;
+    font-weight: 500;
+    @include tablet {
+      margin-top: 40px;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 32px;
+    }
+    @include mobile {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 30px;
+    }
+  }
+  &__empty {
+    width: 100%;
+    margin-top: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      margin-top: 50px;
+    }
+    @include mobile {
+      margin-top: 70px;
+    }
+    & svg {
+      margin-right: 40px;
+      @include tablet {
+        margin-right: 0px;
+      }
+      @include mobile {
+        width: 156px;
+        height: 120px;
+        margin-right: 20px;
+      }
+    }
+    & h2 {
+      margin-top: 42px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      @include tablet {
+        margin-top: 50px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      @include mobile {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    & p {
+      margin-top: 19px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      @include tablet {
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      @include mobile {
+        width: 245px;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 17px;
+        & br {
+          display: none;
+        }
+      }
+    }
+  }
+  &__after-ordering {
+    margin-top: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      margin-top: 60px;
+    }
+    @include mobile {
+      margin-top: 40px;
+    }
+    & h2 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      @include tablet {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      @include mobile {
+        width: 87%;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    & img {
+      margin-top: 50px;
+      @include tablet {
+        width: 35%;
+        height: auto;
+        margin-top: 40px;
+      }
+      @include mobile {
+        width: 62.5%;
+        margin-top: 20px;
+      }
+    }
+    & .button_orange {
+      margin-top: 70px;
+      @include tablet {
+        margin-top: 60px;
+        min-width: 180px;
+      }
+      @include mobile {
+        min-width: 140px;
+        margin-top: 40px;
+      }
+    }
+  }
+  &__list {
+    margin-top: 10px;
+    width: 100%;
+    @include tablet {
+      border-top: 1px solid #000;
+      margin-top: 30px;
+    }
+  }
+  &__item {
+    width: 100%;
+    padding: 50px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid #000;
+    }
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 44px;
+    @include tablet {
+      grid-template-columns: 24.5% 1fr;
+      padding: 20px 0;
+      grid-column-gap: 40px;
+    }
+    @include mobile {
+      grid-template-columns: 35% 1fr;
+      padding: 16px 0;
+      grid-column-gap: 10px;
+    }
+    & img {
+      width: 100%;
+      height: auto;
+    }
+    &_info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      & h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        @include tablet {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+        }
+        @include mobile {
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+      & h3 {
+        margin-top: 14px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey2;
+        @include tablet {
+          margin-top: 6px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 15px;
+          color: #535353;
+        }
+        @include mobile {
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+      & .counter {
+        align-items: flex-start;
+        margin-top: 30px;
+        @include mobile {
+          margin-top: 18px;
+        }
+        & p:first-child {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: $grey2;
+          @include tablet {
+            display: none;
+          }
+        }
+        &__block {
+          margin-top: 10px;
+          @include tablet {
+            margin-top: 0;
+          }
+          & button {
+            padding: 13px;
+            @include tablet {
+              padding: 9px;
+            }
+            @include mobile {
+              padding: 7px;
+            }
+            & svg {
+              @include tablet {
+                transform: scale(0.9);
+              }
+              @include mobile {
+                transform: scale(0.8);
+              }
+            }
+          }
+        }
+      }
+    }
+    &_delete {
+      display: flex;
+      align-items: center;
+      background-color: inherit;
+      border: none;
+      & p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      & svg {
+        margin-left: 16px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+      @include tablet {
+        & svg {
+          margin-left: 10px;
+          width: 16px;
+          height: 16px;
+          & path {
+            fill: #000;
+          }
+        }
+      }
+      @include mobile {
+        & svg {
+          margin-left: 5px;
+          width: 14px;
+          height: 14px;
+        }
+        & p {
+          display: none;
+        }
+      }
+    }
+  }
+}

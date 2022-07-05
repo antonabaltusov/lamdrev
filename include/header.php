@@ -75,8 +75,8 @@
 
       </div>
       <div class="header__manage_languages">
-        <button class="header__manage_language">RU</button>
-        <button class="header__manage_language header__manage_language_selected">EN</button>
+        <a class="header__manage_language">RU</a>
+        <a href="https://en.lamdrev.com/" class="header__manage_language header__manage_language_selected link">EN</a>
       </div>
     </div>
   </div>

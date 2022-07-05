@@ -62,7 +62,6 @@
       }
     }
     & textarea {
-      resize: none;
       height: 147px;
       @include tablet {
         height: 101px;
@@ -70,25 +69,11 @@
     }
     & input,
     textarea {
-      width: 100%;
       margin-bottom: 24px;
-      border: 1px solid #9a9a9a;
       outline: none;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      color: #000000;
-      &::placeholder {
-        color: #8a8a8a;
-      }
       padding: 15px 21px;
-      &:invalid:not(:focus):visited {
-        border: 1px solid #ff2e2e;
-      }
       @include tablet {
         padding: 12px 15px;
-        font-size: 12px;
-        line-height: 15px;
         margin-bottom: 16px;
       }
     }
@@ -96,54 +81,11 @@
       @include tablet {
         margin-top: 4px;
       }
-      &:hover {
-        cursor: pointer;
-      }
       & a {
-        display: inline;
         color: #171717;
       }
       & p {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
         color: #171717;
-        @include tablet {
-          font-size: 8px;
-          line-height: 10px;
-        }
-      }
-      position: relative;
-      display: flex;
-      align-items: center;
-      &__real {
-        display: none;
-        &:checked + .checkbox__custom::before {
-          display: block;
-        }
-      }
-      &__custom {
-        position: relative;
-        min-width: 26px;
-        height: 26px;
-        border: 1px solid #ed6b40;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 6px;
-        &::before {
-          content: url(./../img/svg/okay.svg);
-          position: absolute;
-          transform: translate(-50%, -50%);
-          top: 55%;
-          left: 53%;
-          display: none;
-        }
-        @include tablet {
-          min-width: 18px;
-          height: 18px;
-          margin-right: 10px;
-        }
       }
     }
     & .button_orange {

@@ -147,11 +147,20 @@
       margin-right: 30px;
       display: flex;
       align-items: center;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        & p,
+        span {
+          color: #fc7a4f;
+        }
+      }
       @include tablet {
         margin-right: 16px;
       }
       & p,
       span {
+        text-decoration: none;
         display: inline;
         margin-left: 10px;
         font-weight: 400;
@@ -183,6 +192,7 @@
       }
     }
     &_language {
+      display: inline-block;
       padding: 0px 5px;
       border: none;
       background: inherit;
@@ -195,8 +205,8 @@
         display: none;
       }
       &_selected {
-        color: #ed6b40;
         text-decoration: underline;
+        color: #ed6b40;
         @include tablet {
           text-decoration: none;
         }

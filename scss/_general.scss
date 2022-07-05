@@ -152,7 +152,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    & h2 {
+    & h2,
+    h1 {
       position: relative;
       font-weight: 600;
       font-size: 32px;
@@ -171,6 +172,7 @@ footer {
         left: 0;
       }
     }
+
     & a {
       font-weight: 500;
       font-size: 14px;
@@ -181,6 +183,15 @@ footer {
       & a {
         display: none;
       }
+      & h1 {
+        font-size: 24px;
+        line-height: 29px;
+        padding-left: 125px;
+        &::before {
+          top: calc(29px / 2);
+          width: 105px;
+        }
+      }
       & h2 {
         font-size: 24px;
         line-height: 29px;
@@ -190,8 +201,27 @@ footer {
           width: 105px;
         }
       }
+      &.without-line {
+        & h2,
+        h1 {
+          padding-left: 0;
+          &::before {
+            display: none;
+          }
+        }
+      }
     }
     @include mobile {
+      & h1 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 50px;
+        &::before {
+          width: 40px;
+          position: absolute;
+          top: calc(20px / 2);
+        }
+      }
       & h2 {
         font-size: 14px;
         line-height: 20px;
@@ -236,6 +266,100 @@ footer {
     }
   }
 }
+.form {
+  & h2 {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    @include tablet {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    @include mobile {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  & input,
+  textarea {
+    width: 100%;
+    border: 1px solid #9a9a9a;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    resize: none;
+    &::placeholder {
+      color: #8a8a8a;
+    }
+    padding: 15px 16px;
+    // &:invalid:not(:focus) {
+    //   border: 1px solid #ff2e2e;
+    // }
+    @include tablet {
+      padding: 13px 12px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    @include mobile {
+      padding: 13px 10px;
+    }
+  }
+  & .checkbox {
+    &:hover {
+      cursor: pointer;
+    }
+    & a {
+      display: inline;
+      color: #000000;
+    }
+    & p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #000000;
+      @include tablet {
+        font-size: 8px;
+        line-height: 10px;
+      }
+    }
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__real {
+      display: none;
+      &:checked + .checkbox__custom::before {
+        display: block;
+      }
+    }
+    &__custom {
+      position: relative;
+      min-width: 26px;
+      height: 26px;
+      border: 1px solid #ed6b40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 6px;
+      &::before {
+        content: url(./../img/svg/okay.svg);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 55%;
+        left: 53%;
+        display: none;
+      }
+      @include tablet {
+        min-width: 18px;
+        height: 18px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
 
 .container {
   width: 1200px;
@@ -251,7 +375,7 @@ footer {
 }
 .link {
   text-align: center;
-  text-decoration-line: underline;
+  text-decoration: underline;
   color: #ed6b40;
   &:hover {
     color: #fc7a4f;
@@ -308,6 +432,9 @@ footer {
       padding: 13px 21px;
       &:hover {
         cursor: pointer;
+        & svg path {
+          fill: #ed6b40;
+        }
       }
       @include tablet {
         padding: 5px 15px;

@@ -142,16 +142,16 @@
       </div>
       <a class="button_orange button_orange_no-desktop" href="">О нас</a>
     </div>
-    <div class="block4 container">
+    <div class="blog container">
       <div class="block__top">
         <h2>Блог</h2>
       </div>
-      <div class="block4__list">
-        <div class="block4__item">
+      <div class="blog__list">
+        <div class="blog__item">
           <img width="388px" height="346px" src="./img/Rectangle28.webp" data-originalres="jpg" alt="">
-          <div class="block4__item_info">
+          <div class="blog__item_info">
             <h3>Гнутоклееные элементы мебели</h3>
-            <div class="block4__item_bottom">
+            <div class="blog__item_bottom">
               <a href="">Перейти
                 <svg width="23" height="8" viewBox="0 0 23 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -163,11 +163,11 @@
             </div>
           </div>
         </div>
-        <div class="block4__item">
+        <div class="blog__item">
           <img width="388px" height="346px" src="./img/Rectangle29.webp" data-originalres="jpg" alt="">
-          <div class="block4__item_info">
+          <div class="blog__item_info">
             <h3>Ростовые группы по ГОСТу детской мебели</h3>
-            <div class="block4__item_bottom">
+            <div class="blog__item_bottom">
               <a href="">Перейти
                 <svg width="23" height="8" viewBox="0 0 23 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -179,11 +179,11 @@
             </div>
           </div>
         </div>
-        <div class="block4__item">
+        <div class="blog__item">
           <img width="388px" height="346px" src="./img/Rectangle30.webp" data-originalres="jpg" alt="">
-          <div class="block4__item_info">
+          <div class="blog__item_info">
             <h3>Требования к детской мебели</h3>
-            <div class="block4__item_bottom">
+            <div class="blog__item_bottom">
               <a href="">Перейти
                 <svg width="23" height="8" viewBox="0 0 23 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -196,13 +196,13 @@
           </div>
         </div>
       </div>
-      <a class="button_orange" href="">Все статьи</a>
+      <a class="button_orange" href="./blog.php">Все статьи</a>
     </div>
     <div class="block5 container">
       <div class="block5__background">
         <img width="796px" height="583px" src="./img/Rectangle35.webp" data-originalres="jpg" alt="">
       </div>
-      <form class="block5__form" action="">
+      <form class="block5__form form" action="">
         <h2>Задайте ваш вопрос</h2>
         <input type="text" placeholder="Ваше имя">
         <input type="tel" placeholder="+7 (---)--- -- --"
