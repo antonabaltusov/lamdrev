@@ -109,7 +109,7 @@
         <div class="block3__main_photo">
           <div class="photo photo_top">
             <div class="photo_top_logo">
-              <img src="./img/svg/logo-mini.png" alt="лого">
+              <img src="./img/svg/logo-mini.svg" alt="лого">
             </div>
             <img width="400px" height="388px" src="./img/Rectangle19.webp" data-originalres="jpg" alt="">
           </div>
