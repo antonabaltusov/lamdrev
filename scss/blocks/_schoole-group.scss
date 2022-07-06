@@ -50,7 +50,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
-      color: #171717;
+      color: $text;
       &:not(:last-child) {
         margin-bottom: 20px;
       }
@@ -121,7 +121,7 @@
           font-weight: 400;
           font-size: 12px;
           line-height: 15px;
-          color: #8a8a8a;
+          color: $grey1;
           @include tablet {
             font-size: 10px;
             line-height: 12px;
