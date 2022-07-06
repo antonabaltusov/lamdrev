@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/style.css" />
   <script src="./swiper/swiper-bundle.min.js" defer></script>
   <script src="./js/script.js" defer></script>
+  <script src="./js/valid.js" defer></script>
 </head>
 
 <body>
@@ -202,14 +203,24 @@
       <div class="block5__background">
         <img width="796px" height="583px" src="./img/Rectangle35.webp" data-originalres="jpg" alt="">
       </div>
-      <form class="block5__form form" action="">
+      <form novalidate class="block5__form form" action="">
         <h2>Задайте ваш вопрос</h2>
-        <input type="text" placeholder="Ваше имя">
-        <input type="tel" placeholder="+7 (---)--- -- --"
-          pattern="\+7\s?[\(]{0,1}9[0-9]{2}[)]{0,1}\s?\d{3}\s?[\-]{0,1}\d{2}\s?[\-]{0,1}\d{2}">
-        <textarea name="" id="" placeholder="Ваш вопрос"></textarea>
+        <div class='input-wrapper'>
+          <input required class='input' id="name" type="text" placeholder="Ваше имя*">
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div class='input-wrapper'>
+          <input required class='input' id="tel" type="tel" placeholder="+7 (---)--- -- --*"
+            pattern="\+7\s?[\(]{0,1}9[0-9]{2}[)]{0,1}\s?\d{3}\s?[\-]{0,1}\d{2}\s?[\-]{0,1}\d{2}">
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div class='input-wrapper'>
+          <textarea required class='input' id="question" name="" id="" placeholder="Ваш вопрос*"></textarea>
+          <span class="error" aria-live="polite"></span>
+        </div>
         <label class="checkbox" for="agree">
-          <input type="checkbox" name="agree" id="agree" class="checkbox__real">
+          <input required type="checkbox" name="agree" id="agree" class="checkbox__real input">
+          <span class="error" aria-live="polite"></span>
           <span class="checkbox__custom"></span>
           <p>Нажимая кнопку “Отправить” Вы соглашаетесь на обработку <a href="">персональных данных</a></p>
         </label>

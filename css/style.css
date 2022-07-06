@@ -502,6 +502,34 @@ footer {
   }
 }
 
+.form .input-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.form textarea {
+  height: 100%;
+}
+
+.form span.error {
+  position: absolute;
+  width: max-content;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ff2e2e;
+  bottom: 100%;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .form span.error {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+
 .form h2 {
   margin-bottom: 40px;
   font-weight: 600;
@@ -534,6 +562,7 @@ footer {
   line-height: 20px;
   color: #000000;
   resize: none;
+  box-sizing: border-box;
   padding: 15px 16px;
 }
 
@@ -558,7 +587,13 @@ footer {
   }
 }
 
+.form input.error:not(:focus),
+.form textarea.error:not(:focus) {
+  border: 1px solid #ff2e2e;
+}
+
 .form .checkbox {
+  width: fit-content;
   position: relative;
   display: flex;
   align-items: center;
@@ -591,7 +626,7 @@ footer {
   display: none;
 }
 
-.form .checkbox__real:checked + .checkbox__custom::before {
+.form .checkbox__real:checked ~ .checkbox__custom::before {
   display: block;
 }
 
@@ -4704,7 +4739,7 @@ footer {
   }
 }
 
-.contacts__form .form__inputs div {
+.contacts__form .form__inputs-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
@@ -6001,9 +6036,26 @@ footer {
   }
 }
 
+.ordering.form .requared-form {
+  display: none;
+  align-items: center;
+  margin-top: 11px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 23px;
+  color: #ff2e2e;
+}
+
+.ordering.form .requared-form svg {
+  margin-right: 6px;
+}
+
 @media (max-width: 767px) {
   .ordering.form {
     margin-top: 27px;
+  }
+  .ordering.form.error .requared-form {
+    display: flex;
   }
 }
 
@@ -6023,19 +6075,71 @@ footer {
   }
 }
 
-.ordering.form .inputs input:not(:last-child) {
+.ordering.form .inputs .input-wrapper:not(:last-child) {
   margin-bottom: 20px;
 }
 
 @media (max-width: 1200px) {
-  .ordering.form .inputs input:not(:last-child) {
+  .ordering.form .inputs .input-wrapper:not(:last-child) {
     margin-bottom: 16px;
   }
 }
 
 @media (max-width: 767px) {
-  .ordering.form .inputs input:not(:last-child) {
+  .ordering.form .inputs .input-wrapper:not(:last-child) {
     margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ordering.form .inputs .input-wrapper.error::after {
+    content: url(./../../img/svg/requared.svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    display: block;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 10px;
+  }
+}
+
+.ordering.form .inputs .input-wrapper input {
+  position: relative;
+  padding-right: 26px;
+}
+
+@media (max-width: 767px) {
+  .ordering.form .inputs .input-wrapper input.error:not(:focus) {
+    border: 1px solid #9a9a9a;
+  }
+  .ordering.form .inputs .input-wrapper input.error:not(:focus)::after {
+    content: url(./../../img/svg/requared.svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    display: block;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 10px;
+  }
+}
+
+.ordering.form span.error {
+  position: absolute;
+  width: max-content;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff2e2e;
+  transform: translateY(-50%);
+  top: 50%;
+  left: calc(100% + 20px);
+}
+
+@media (max-width: 767px) {
+  .ordering.form span.error {
+    display: none;
   }
 }
 

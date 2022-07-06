@@ -10,6 +10,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=033a4a31-e0f3-424a-84b5-e6789505979d&lang=ru_RU">
   </script>
   <script src="./js/contacts.js"></script>
+  <script src="./js/valid.js" defer></script>
 </head>
 
 <body>
@@ -108,19 +109,35 @@
     </div>
     <div class="contacts__form">
       <h2>Задайте ваш вопрос</h2>
-      <form class="form" action="">
+      <form novalidate class="form" action="">
         <div class="form__inputs">
-          <div>
-            <input required minlength="1" type="text" placeholder="Ваше имя*">
-            <input required type="email" placeholder="E-mail*">
-            <input required type="text" placeholder="Укажите ваш город*">
-            <input required type="tel" placeholder="+7 (---) --- -- --*"
-              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[)]{0,1}\s?\d{3}\s?[\-]{0,1}\d{2}\s?[\-]{0,1}\d{2}">
+          <div class="form__inputs-wrapper">
+            <div class='input-wrapper'>
+              <input class='input' id="name" required type="text" placeholder="Ваше имя*">
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class='input-wrapper'>
+              <input class='input' id="email" required type="email" placeholder="E-mail*">
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class='input-wrapper'>
+              <input class='input' id="city" required type="text" placeholder="Укажите ваш город*">
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class='input-wrapper'>
+              <input class='input' id="tel" required type="tel" placeholder="+7 (---) --- -- --*"
+                pattern="\+7\s?[\(]{0,1}9[0-9]{2}[)]{0,1}\s?\d{3}\s?[\-]{0,1}\d{2}\s?[\-]{0,1}\d{2}">
+              <span class="error" aria-live="polite"></span>
+            </div>
           </div>
-          <textarea required placeholder="Ваш вопрос*"></textarea>
+          <div class='input-wrapper'>
+            <textarea class='input' id="question" required placeholder="Ваш вопрос*"></textarea>
+            <span class="error" aria-live="polite"></span>
+          </div>
         </div>
         <label class="form__checkbox checkbox" for="agree">
-          <input required type="checkbox" name="agree" id="agree" class="checkbox__real">
+          <input required type="checkbox" name="agree" id="agree" class="checkbox__real input">
+          <span class="error" aria-live="polite"></span>
           <span class="checkbox__custom"></span>
           <p>Нажимая кнопку “Отправить” Вы соглашаетесь на обработку <a href="">персональных данных</a></p>
         </label>

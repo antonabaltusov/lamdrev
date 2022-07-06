@@ -36,8 +36,23 @@
     @include tablet {
       margin-top: 34px;
     }
+    & .requared-form {
+      display: none;
+      align-items: center;
+      margin-top: 11px;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 23px;
+      color: #ff2e2e;
+      & svg {
+        margin-right: 6px;
+      }
+    }
     @include mobile {
       margin-top: 27px;
+      &.error .requared-form {
+        display: flex;
+      }
     }
     & .inputs {
       width: 286px;
@@ -47,7 +62,8 @@
       @include mobile {
         width: 176px;
       }
-      & input {
+
+      & .input-wrapper {
         &:not(:last-child) {
           margin-bottom: 20px;
           @include tablet {
@@ -57,6 +73,53 @@
             margin-bottom: 12px;
           }
         }
+        &.error {
+          @include mobile {
+            &::after {
+              content: url(./../../img/svg/requared.svg);
+              width: 16px;
+              height: 16px;
+              position: absolute;
+              display: block;
+              transform: translateY(-50%);
+              top: 50%;
+              right: 10px;
+            }
+          }
+        }
+        & input {
+          position: relative;
+          padding-right: 26px;
+          &.error:not(:focus) {
+            @include mobile {
+              border: 1px solid #9a9a9a;
+              &::after {
+                content: url(./../../img/svg/requared.svg);
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                display: block;
+                transform: translateY(-50%);
+                top: 50%;
+                right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & span.error {
+      position: absolute;
+      width: max-content;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #ff2e2e;
+      transform: translateY(-50%);
+      top: 50%;
+      left: calc(100% + 20px);
+      @include mobile {
+        display: none;
       }
     }
     & h6 {

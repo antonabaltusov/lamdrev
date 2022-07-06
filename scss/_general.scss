@@ -267,6 +267,28 @@ footer {
   }
 }
 .form {
+  & .input-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  & textarea {
+    height: 100%;
+  }
+  & span.error {
+    position: absolute;
+    width: max-content;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #ff2e2e;
+    bottom: 100%;
+    right: 0;
+    @include mobile {
+      font-size: 8px;
+      line-height: 10px;
+    }
+  }
   & h2 {
     margin-bottom: 40px;
     font-weight: 600;
@@ -292,6 +314,7 @@ footer {
     line-height: 20px;
     color: #000000;
     resize: none;
+    box-sizing: border-box;
     &::placeholder {
       color: #8a8a8a;
     }
@@ -307,8 +330,12 @@ footer {
     @include mobile {
       padding: 13px 10px;
     }
+    &.error:not(:focus) {
+      border: 1px solid #ff2e2e;
+    }
   }
   & .checkbox {
+    width: fit-content;
     &:hover {
       cursor: pointer;
     }
@@ -331,7 +358,7 @@ footer {
     align-items: center;
     &__real {
       display: none;
-      &:checked + .checkbox__custom::before {
+      &:checked ~ .checkbox__custom::before {
         display: block;
       }
     }
