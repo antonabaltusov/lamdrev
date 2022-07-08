@@ -16,7 +16,7 @@
     ?>
   <main class="cart container">
     <div class="nuv">
-      <p><a href="/">Главная</a> / Корзина </p>
+      <p><a href="./">Главная</a> / Корзина </p>
     </div>
     <div class="block__top without-line">
       <h1>Корзина</h1>
@@ -93,7 +93,7 @@
         </div>
       </div>
     </div>
-    <a class="button_orange cart" href="">Оформить заказ</a>
+    <a class="button_orange cart" href="./ordering.php">Оформить заказ</a>
 
 
   </main>

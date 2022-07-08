@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каркасы</title>
+  <title>Каталог каркасов</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -15,7 +15,7 @@
     ?>
   <main class="karkasy karkasy-catalog container">
     <div class="nuv">
-      <p><a href="/">Главная</a> / Каркасы</p>
+      <p><a href="./">Главная</a> / <a href="./karkasy.php">Каркасы</a> / Каталог каркасов</p>
     </div>
     <h1>Каркасы серии №</h1>
     <div class="karkasy__cards">

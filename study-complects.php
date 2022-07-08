@@ -16,7 +16,7 @@
   <main class="study-complects container">
     <img class="study-complects__background" src="./img/Union.webp" data-originalres="png" alt="">
     <div class="nuv">
-      <p><a href="/">Главная</a> / Ученические комплекты</p>
+      <p><a href="./">Главная</a> / Ученические комплекты</p>
     </div>
     <div class="study-complects__cards">
       <div class="study-complects__card">

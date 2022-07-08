@@ -16,7 +16,7 @@
     ?>
   <main class="about-us container">
     <div class="nuv">
-      <p><a href="/">Главная</a> / О нас </p>
+      <p><a href="./">Главная</a> / О нас </p>
     </div>
     <div class="block__top">
       <h1>О нас</h1>

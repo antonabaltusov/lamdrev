@@ -17,7 +17,7 @@
   <main class="blog blog_full container">
     <img class="blog__background" src="./img/Union.webp" data-originalres="png" alt="">
     <div class="nuv">
-      <p><a href="/">Главная</a> / Блог </p>
+      <p><a href="./">Главная</a> / Блог </p>
     </div>
     <div class="block__top">
       <h1>Блог</h1>
@@ -168,7 +168,7 @@
         </div>
       </div>
     </div>
-    <a class="button_orange" href="">Показать еще</a>
+    <button class="button_orange">Показать еще</button>
   </main>
 
   <?php

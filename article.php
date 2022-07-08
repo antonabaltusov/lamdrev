@@ -16,7 +16,7 @@
     ?>
   <main class="article container">
     <div class="nuv">
-      <p><a href="/">Главная</a> / Статья </p>
+      <p><a href="./">Главная</a> / Статья </p>
     </div>
     <h1>Гнутоклееные элементы мебели</h1>
     <div class="article__img">

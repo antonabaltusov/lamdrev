@@ -16,7 +16,7 @@
     ?>
   <main class="cart container">
     <div class="nuv">
-      <p><a href="/">Главная</a> / Корзина </p>
+      <p><a href="./">Главная</a> / Корзина </p>
     </div>
     <div class="block__top">
       <h1>Корзина</h1>
@@ -24,7 +24,7 @@
     <div class="cart__after-ordering">
       <h2>Спасибо что оставили заявку, мы вам перезвоним</h2>
       <img width="413px" height="490px" src="./img/Rectangle125.webp" data-originalres="jpg">
-      <a class="button_orange" href="">На главную</a>
+      <a class="button_orange" href="./">На главную</a>
     </div>
 
   </main>

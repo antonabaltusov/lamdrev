@@ -19,7 +19,7 @@
     ?>
   <main class="legs catalog container">
     <div class="nuv">
-      <p><a href="">Главная</a> / Ножки</p>
+      <p><a href="./">Главная</a> / Ножки</p>
     </div>
     <div class="catalog__list legs__list">
       <div class="catalog__item legs__item">

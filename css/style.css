@@ -1036,6 +1036,17 @@ footer {
   margin-right: 41px;
 }
 
+.header__contacts div:first-child a {
+  margin-top: 5px;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+.header__contacts div:first-child a svg {
+  margin-right: 8px;
+}
+
 @media (max-width: 767px) {
   .header__contacts div:first-child {
     margin: 17px 0 0 0;
@@ -1063,15 +1074,15 @@ footer {
 }
 
 @media (max-width: 767px) {
-  .header__contacts div:first-child button {
+  .header__contacts div:first-child a {
     background: #2dd067;
     padding: 10px 10px 10px 6px;
     color: white;
   }
-  .header__contacts div:first-child button svg path {
+  .header__contacts div:first-child a svg path {
     fill: white;
   }
-  .header__contacts div:first-child button:last-child {
+  .header__contacts div:first-child a:last-child {
     display: none;
   }
 }
@@ -4484,32 +4495,41 @@ footer {
   }
 }
 
-.contacts__block1 p {
+.contacts__block1 p,
+.contacts__block1 a {
+  text-decoration: none;
   margin-top: 14px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   display: flex;
+  align-items: center;
 }
 
-.contacts__block1 p svg {
-  vertical-align: middle;
+.contacts__block1 p svg,
+.contacts__block1 a svg {
   margin-right: 10px;
 }
 
 @media (max-width: 1200px) {
-  .contacts__block1 p {
+  .contacts__block1 p,
+  .contacts__block1 a {
     margin-top: 16px;
   }
 }
 
 @media (max-width: 767px) {
-  .contacts__block1 p {
+  .contacts__block1 p,
+  .contacts__block1 a {
     margin-top: 6px;
     font-size: 12px;
     line-height: 15px;
   }
+}
+
+.contacts__block1 a {
+  margin-top: 0;
 }
 
 .contacts__block2 {
@@ -4621,43 +4641,56 @@ footer {
   }
 }
 
-.contacts__block2_item .info p {
+.contacts__block2_item .info p,
+.contacts__block2_item .info a {
   margin-top: 10px;
+  color: #000000;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
 
-.contacts__block2_item .info p:first-child {
+.contacts__block2_item .info p:first-child,
+.contacts__block2_item .info a:first-child {
   margin-top: 12px;
 }
 
-.contacts__block2_item .info p svg {
+.contacts__block2_item .info p svg,
+.contacts__block2_item .info a svg {
   vertical-align: sub;
   margin-right: 10px;
 }
 
 @media (max-width: 1200px) {
-  .contacts__block2_item .info p {
+  .contacts__block2_item .info p,
+  .contacts__block2_item .info a {
     margin-top: 10px;
     font-size: 12px;
     line-height: 15px;
   }
-  .contacts__block2_item .info p:first-child {
+  .contacts__block2_item .info p:first-child,
+  .contacts__block2_item .info a:first-child {
     font-size: 14px;
     line-height: 17px;
   }
-  .contacts__block2_item .info p svg {
+  .contacts__block2_item .info p svg,
+  .contacts__block2_item .info a svg {
     width: 15px;
     height: 14px;
   }
 }
 
 @media (max-width: 767px) {
-  .contacts__block2_item .info p:first-child {
+  .contacts__block2_item .info p:first-child,
+  .contacts__block2_item .info a:first-child {
     font-size: 12px;
     line-height: 15px;
   }
+}
+
+.contacts__block2_item .info a {
+  margin-top: 0;
+  text-decoration: none;
 }
 
 .contacts__form {
@@ -5548,7 +5581,7 @@ footer {
   margin-top: 110px;
   padding: 18px 62px;
   min-width: 286px;
-  width: auto;
+  width: fit-content;
 }
 
 @media (max-width: 1200px) {

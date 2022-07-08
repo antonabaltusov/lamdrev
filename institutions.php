@@ -19,7 +19,7 @@
     ?>
   <main class="schoole-group catalog container">
     <div class="nuv">
-      <p><a href="/">Главная</a> / <a href="./study-complects.php">Ученические комплекты</a> / Для школьных групп и
+      <p><a href="./">Главная</a> / <a href="./study-complects.php">Ученические комплекты</a> / Для школьных групп и
         начальных классов</p>
     </div>
     <div class="schoole-group__info">

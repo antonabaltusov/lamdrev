@@ -16,7 +16,7 @@
     ?>
   <main class="cart container">
     <div class="nuv">
-      <p><a href="/">Главная</a> / Корзина </p>
+      <p><a href="./">Главная</a> / Корзина </p>
     </div>
     <div class="block__top without-line">
       <h1>Корзина</h1>
@@ -36,7 +36,7 @@
       <h2>Ваша корзина пустая</h2>
       <p>Выберите нужный Вам товар из каталога<br>
         и добавьте его в корзину.</p>
-      <a class="button_orange" href="">Перейти к товарам</a>
+      <a class="button_orange" href="./">Перейти к товарам</a>
     </div>
 
   </main>

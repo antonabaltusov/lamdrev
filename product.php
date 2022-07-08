@@ -18,7 +18,7 @@
     ?>
   <main class="product container">
     <div class="nuv">
-      <p><a href="/">Главная</a> / <a href="/karkasy.php">Каркасы</a> / <a href="/karkasy-catalog.php">Каталог
+      <p><a href="./">Главная</a> / <a href="/karkasy.php">Каркасы</a> / <a href="/karkasy-catalog.php">Каталог
           каркасов</a> / Каркас под
         обивку такнью МОДЕЛЬ 1. 1 </p>
     </div>

@@ -15,77 +15,77 @@
     ?>
   <main class="karkasy container">
     <div class="nuv">
-      <p><a href="/">Главная</a> / Каркасы</p>
+      <p><a href="./">Главная</a> / Каркасы</p>
     </div>
     <div class="karkasy__cards">
       <div class="karkasy__card">
         <img src="./img/Group71.webp" data-originalres="png" alt="Каркасы серии №1">
         <div class="karkasy__card_info">
           <p>Каркасы серии №1</p>
-          <a href="/karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="karkasy__card">
         <img src="./img/Group95.webp" data-originalres="png" alt="Каркасы серии №2">
         <div class="karkasy__card_info">
           <p>Каркасы серии №2</p>
-          <a href="/karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="karkasy__card">
         <img src="./img/Group96.webp" data-originalres="png" alt="Каркасы серии 25">
         <div class="karkasy__card_info">
           <p>Каркасы серии 25</p>
-          <a href="/karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="karkasy__card">
         <img src="./img/Group97.webp" data-originalres="png" alt="Каркасы серии №26">
         <div class="karkasy__card_info">
           <p>Каркасы серии №26</p>
-          <a href="/karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="karkasy__card">
         <img src="./img/Group98.webp" data-originalres="png" alt="Каркасы с финишной обработкой">
         <div class="karkasy__card_info">
           <p>Каркасы с финишной обработкой</p>
-          <a href="/karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="karkasy__card">
         <img src="./img/Rectangle105.webp" data-originalres="png" alt="Каркасы серии №20">
         <div class="karkasy__card_info">
           <p>Каркасы серии №20</p>
-          <a href="/karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="karkasy__card">
         <img src="./img/Group99.webp" data-originalres="png" alt="Каркасы серии №3-4">
         <div class="karkasy__card_info">
           <p>Каркасы серии №3-4</p>
-          <a href="/karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="karkasy__card">
         <img src="./img/Rectangle107.webp" data-originalres="png" alt="Каркасы серии №11-12">
         <div class="karkasy__card_info">
           <p>Каркасы серии №11-12</p>
-          <a href="/karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="karkasy__card">
         <img src="./img/Rectangle116.webp" data-originalres="png" alt="Каркасы серии №8">
         <div class="karkasy__card_info">
           <p>Каркасы серии №8</p>
-          <a href="/karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="karkasy__card">
         <img src="./img/Rectangle117.webp" data-originalres="png" alt="Сиденья">
         <div class="karkasy__card_info">
           <p>Сиденья</p>
-          <a href="/karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./karkasy-catalog.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
     </div>

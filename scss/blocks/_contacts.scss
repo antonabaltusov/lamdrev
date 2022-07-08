@@ -62,15 +62,17 @@
         line-height: 17px;
       }
     }
-    & p {
+    & p,
+    a {
+      text-decoration: none;
       margin-top: 14px;
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
       color: #000000;
       display: flex;
+      align-items: center;
       & svg {
-        vertical-align: middle;
         margin-right: 10px;
       }
       @include tablet {
@@ -81,6 +83,9 @@
         font-size: 12px;
         line-height: 15px;
       }
+    }
+    a {
+      margin-top: 0;
     }
   }
   &__block2 {
@@ -152,11 +157,13 @@
             line-height: 12px;
           }
         }
-        & p {
+        & p,
+        a {
           margin-top: 10px;
           &:first-child {
             margin-top: 12px;
           }
+          color: #000000;
           font-weight: 400;
           font-size: 16px;
           line-height: 20px;
@@ -183,6 +190,10 @@
               line-height: 15px;
             }
           }
+        }
+        a {
+          margin-top: 0;
+          text-decoration: none;
         }
       }
     }
