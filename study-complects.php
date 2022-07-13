@@ -25,14 +25,14 @@
         <img src="./img/Rectangle83.webp" data-originalres="jpg" alt="">
         <div class="study-complects__card_info">
           <p>Для школьных групп и начальных классов</p>
-          <a href="/schoole-group.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./schoole-group.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="study-complects__card">
         <img src="./img/Rectangle84.webp" data-originalres="jpg" alt="">
         <div class="study-complects__card_info">
           <p>Для образовательных учреждений</p>
-          <a href="/institutions.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
+          <a href="./institutions.php" class="button_orange button_orange-card" href="">Перейти к товарам</a>
         </div>
       </div>
       <div class="study-complects__card">
