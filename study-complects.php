@@ -86,7 +86,7 @@
       <p>Стоимость типовой продукции указана в каталоге, изделия нестандартных размеров или конструкций рассчитывается
         индивидуально. Чтобы уточнить цену и заказать комплекты для ученической мебели с доставкой по России, звоните
         нам <a href="tel: +79127584733">+7 (912) 758-47-33</a>.</p>
-      <a href="" class="whatsup-button">
+      <a href="https://wa.me/+79127584733" target="_blank" class="whatsup-button">
         Написать в WhatsApp
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"

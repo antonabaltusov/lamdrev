@@ -113,7 +113,7 @@
         условиях сотрудничества расскажут менеджеры. Звоните
         <a href="tel: +79199107575">+7 (919) 910-75-75</a>.
       </p>
-      <a href="" class="whatsup-button">
+      <a href="https://wa.me/+79127584733" target="_blank" class="whatsup-button">
         Написать в WhatsApp
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
