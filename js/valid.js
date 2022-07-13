@@ -20,7 +20,8 @@ function showError(input, span) {
         break;
 
       case "agree":
-        span.textContent = "необходимо согласие";
+        span.textContent =
+          "Необходимо согласие с обработкой персональных данных";
         break;
 
       case "question":

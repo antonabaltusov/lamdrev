@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Корзина</title>
+  <link rel="icon" href="./img/svg/list-style.svg" type="image/svg">
+  <link rel="shortcut icon" href="./img/svg/list-style.svg" type="image/svg">
   <link rel="stylesheet" href="./css/style.css" />
 
 </head>
@@ -20,6 +22,7 @@
     </div>
     <div class="block__top without-line">
       <h1>Корзина</h1>
+      <a class="button_orange cart" href="./ordering.php">Оформить заказ</a>
     </div>
     <div class="cart__list">
       <div class="cart__item">
@@ -29,7 +32,7 @@
             <h2>Каркас под обивку тканью</h2>
             <h3>МОДЕЛЬ3.1-4.1</h3>
             <div class="counter">
-              <p>Количесвто</p>
+              <p>Количество</p>
               <div class="counter__block">
                 <button>
                   <svg width="8" height="3" viewBox="0 0 8 3" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +67,7 @@
             <h2>Каркас под обивку тканью</h2>
             <h3>МОДЕЛЬ3.1-4.1</h3>
             <div class="counter">
-              <p>Количесвто</p>
+              <p>Количество</p>
               <div class="counter__block">
                 <button>
                   <svg width="8" height="3" viewBox="0 0 8 3" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,6 +97,13 @@
       </div>
     </div>
     <a class="button_orange cart" href="./ordering.php">Оформить заказ</a>
+    <a href="#" class="button_up">
+      <svg width="24" height="51" viewBox="0 0 24 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.0607 0.939339C12.4749 0.353554 11.5251 0.353554 10.9393 0.939339L1.3934 10.4853C0.807611 11.0711 0.807611 12.0208 1.3934 12.6066C1.97919 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.939339ZM13.5 51L13.5 2H10.5L10.5 51H13.5Z"
+          fill="#ED6B40" />
+      </svg>
+    </a>
 
 
   </main>

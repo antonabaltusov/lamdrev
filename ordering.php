@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оформление заказа</title>
+  <link rel="icon" href="./img/svg/list-style.svg" type="image/svg">
+  <link rel="shortcut icon" href="./img/svg/list-style.svg" type="image/svg">
   <link rel="stylesheet" href="./css/style.css" />
   <script src="./js/valid.js" defer></script>
 
@@ -16,6 +18,9 @@
         include "include/header.php";
     ?>
   <main class="ordering container">
+    <div class="nuv">
+      <p><a href="./">Главная</a> / Корзина </p>
+    </div>
     <h1>Оформление заказа</h1>
     <h2>Чтобы наш оператор мог с вами связаться,<br>
       для уточнения вашего заказа- заполните все поля</h2>
@@ -44,7 +49,8 @@
         <input required type="checkbox" name="agree" id="agree" class="checkbox__real input">
         <span class="error" aria-live="polite"></span>
         <span class="checkbox__custom"></span>
-        <p>Нажимая кнопку “Отправить” Вы соглашаетесь на<br> обработку <a href="">персональных данных</a></p>
+        <p>Нажимая кнопку &laquo;Отправить&raquo; Вы соглашаетесь на<br> обработку <a href="">персональных данных</a>
+        </p>
       </label>
       <button class="button_orange submit" type="submit">Отправить</button>
       <div class="requared-form">

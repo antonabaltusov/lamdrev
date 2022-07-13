@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ученические комплекты</title>
+  <link rel="icon" href="./img/svg/list-style.svg" type="image/svg">
+  <link rel="shortcut icon" href="./img/svg/list-style.svg" type="image/svg">
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -83,7 +85,7 @@
         только приятно, но и безопасно для здоровья, вещей и одежды учеников.</p>
       <p>Стоимость типовой продукции указана в каталоге, изделия нестандартных размеров или конструкций рассчитывается
         индивидуально. Чтобы уточнить цену и заказать комплекты для ученической мебели с доставкой по России, звоните
-        нам +7 (912) 758-47-33.</p>
+        нам <a href="tel: +79127584733">+7 (912) 758-47-33</a>.</p>
       <a href="" class="whatsup-button">
         Написать в WhatsApp
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,6 +95,13 @@
         </svg>
       </a>
     </div>
+    <a href="#" class="button_up">
+      <svg width="24" height="51" viewBox="0 0 24 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.0607 0.939339C12.4749 0.353554 11.5251 0.353554 10.9393 0.939339L1.3934 10.4853C0.807611 11.0711 0.807611 12.0208 1.3934 12.6066C1.97919 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.939339ZM13.5 51L13.5 2H10.5L10.5 51H13.5Z"
+          fill="#ED6B40" />
+      </svg>
+    </a>
   </main>
 
 

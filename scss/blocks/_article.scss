@@ -1,14 +1,7 @@
 .article {
-  margin-top: 43px;
   display: flex;
   flex-direction: column;
   overflow: visible;
-  @include tablet {
-    margin-top: 32px;
-  }
-  @include mobile {
-    margin-top: 20px;
-  }
   & h1,
   h2 {
     font-weight: 600;

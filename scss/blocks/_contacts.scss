@@ -1,7 +1,11 @@
 .contacts {
-  margin-top: 43px;
-  @include tablet {
-    margin-top: 20px;
+  overflow: visible;
+  & .text-map {
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Montserrat";
+    font-size: 17px;
+    line-height: 21px;
   }
   & .block__top h1 {
     font-weight: 500;
@@ -47,6 +51,16 @@
           grid-row: 2;
         }
       }
+      & div {
+        display: flex;
+        flex-direction: column;
+        @include tablet {
+          align-items: center;
+        }
+        @include mobile {
+          align-items: flex-start;
+        }
+      }
     }
     & h2 {
       font-weight: 600;
@@ -56,14 +70,19 @@
       @include tablet {
         font-size: 20px;
         line-height: 24px;
+        text-align: center;
       }
       @include mobile {
+        text-align: left;
         font-size: 14px;
         line-height: 17px;
       }
     }
-    & p,
-    a {
+    & a {
+      & p {
+        display: inline;
+        max-width: 190px;
+      }
       text-decoration: none;
       margin-top: 14px;
       font-weight: 400;
@@ -71,21 +90,24 @@
       line-height: 20px;
       color: #000000;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       & svg {
         margin-right: 10px;
       }
       @include tablet {
         margin-top: 16px;
+        justify-content: center;
       }
       @include mobile {
         margin-top: 6px;
         font-size: 12px;
         line-height: 15px;
+        & svg {
+          margin-right: 6px;
+          width: 14px;
+          height: 14px;
+        }
       }
-    }
-    a {
-      margin-top: 0;
     }
   }
   &__block2 {

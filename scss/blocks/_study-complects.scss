@@ -1,13 +1,6 @@
 .study-complects {
   position: relative;
-  margin-top: 43px;
   overflow: visible;
-  @include tablet {
-    margin-top: 32px;
-  }
-  @include mobile {
-    margin-top: 20px;
-  }
   &__background {
     position: absolute;
     width: 60%;

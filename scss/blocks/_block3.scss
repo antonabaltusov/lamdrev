@@ -96,7 +96,10 @@
           font-weight: 500;
           font-size: 12px;
           line-height: 24px;
-          text-transform: uppercase;
+          & svg {
+            vertical-align: sub;
+            margin-right: 5px;
+          }
         }
         @include mobile {
           display: none;
@@ -127,13 +130,19 @@
         }
       }
       & ul {
-        margin-top: 10px;
+        margin-top: 24px;
+        @include tablet {
+          margin-top: 18px;
+        }
         @include mobile {
-          margin-top: 8px;
+          margin-top: 16px;
         }
       }
       & li {
         margin-top: 16px;
+        &:last-child {
+          margin-top: 18px;
+        }
         position: relative;
         padding-left: 21px + 16px;
         &::before {
@@ -150,6 +159,9 @@
           margin-top: 8px;
           font-size: 14px;
           padding-left: 21px + 8px;
+          &:last-child {
+            display: none;
+          }
         }
         @include mobile {
           padding-left: 15px + 6px;
@@ -157,33 +169,29 @@
             content: url(./../img/svg/list-style-mini.svg);
             top: 0;
           }
+          &:last-child {
+            padding-left: 0;
+            display: inline;
+            margin-top: 24px;
+            &::before {
+              content: "";
+            }
+          }
         }
       }
       & a {
         display: inline-block;
-        margin-top: 18px;
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
-        text-transform: uppercase;
-        &::before {
-          content: url(./../img/svg/logo-mini.svg);
-          display: inline;
-          vertical-align: middle;
-          margin-right: 8px;
-        }
-        @include tablet {
-          display: none;
+        & svg {
+          vertical-align: sub;
+          margin-right: 5px;
         }
         @include mobile {
-          display: inline-block;
           margin-top: 24px;
           font-weight: 400;
           font-size: 12px;
-          &::before {
-            content: "";
-            margin-right: 0;
-          }
         }
       }
     }

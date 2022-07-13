@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="./img/svg/list-style.svg" type="image/svg">
+  <link rel="shortcut icon" href="./img/svg/list-style.svg" type="image/svg">
   <style>
   table {
     max-width: 600px;
@@ -183,7 +185,7 @@
     <tbody>
       <tr>
         <td>
-          <img class="logo" src="./img/svg/logo.jpg" alt="logo" border="0" width="137px" hight="30px"
+          <img class="logo" src="./img/svg/logo.png" alt="logo" border="0" width="137px" hight="30px"
             style="display:block;padding-bottom:21px;">
         </td>
       </tr>

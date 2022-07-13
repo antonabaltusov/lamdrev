@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="./img/svg/list-style.svg" type="image/svg">
+  <link rel="shortcut icon" href="./img/svg/list-style.svg" type="image/svg">
   <style>
   table {
     max-width: 600px;
@@ -183,7 +185,7 @@
     <tbody>
       <tr>
         <td>
-          <img class="logo" src="./img/svg/logo.jpg" alt="logo" border="0" width="137px" hight="30px"
+          <img class="logo" src="./img/svg/logo.png" alt="logo" border="0" width="137px" hight="30px"
             style="display:block;padding-bottom:21px;">
         </td>
       </tr>
@@ -395,7 +397,8 @@
                     style="display:inline;margin-top:0;margin-bottom:0;margin-right:8px;margin-left:0;vertical-align:middle;">
                   <p
                     style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;-webkit-text-size-adjust:none;font-family:'Times New Roman';font-style:normal;font-weight:400;font-size:12px;line-height:14px;color:#171717;display:inline;">
-                    +7(341) 257-02-77</p>
+                    <a href="tel: +79199107575">+7(341) 257-02-77</a>
+                  </p>
                 </td>
                 <td style="vertical-align:bottom;">
                   <img src="./img/svg/map.jpg" alt="icon" border="0" width="11px" hight="14px"

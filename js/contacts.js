@@ -19,6 +19,14 @@ function init() {
   map.controls.remove("fullscreenControl");
   map.controls.remove("rulerControl");
 
-  const myPlacemark = new ymaps.Placemark(center, {}, {});
+  const myPlacemark = new ymaps.Placemark(
+    center,
+    {
+      balloonContent:
+        "<h3 class='text-map'>Россия, Удмуртская Республика, Воткинск,<br> улица 2-й Километр Чайковского Тракта<br> +7 (34145) 4-77-27 +7 (919) 910-75-75</h3>",
+      iconCaption: "ЛамДрев",
+    },
+    {}
+  );
   map.geoObjects.add(myPlacemark);
 }

@@ -35,7 +35,7 @@
   }
   &__form {
     margin-left: 0 auto;
-    padding: 50px 40px 28px;
+    padding: 50px 38px 28px;
     @include tablet {
       padding: 20px 40px 20px;
     }
@@ -99,15 +99,6 @@
     }
   }
   & .button_up {
-    position: absolute;
-    width: 98px;
-    height: 98px;
-    background: #f3f3f3;
-    border: 3px dashed #ed6b40;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transform: translate(50%, 15%);
     @media (max-width: 1300px) {
       transform: translate(20%, 15%);
@@ -115,10 +106,8 @@
     @media (max-width: 1250px) {
       transform: translate(0%, 15%);
     }
+    top: auto;
     right: 0;
     bottom: 0;
-    @include tablet {
-      display: none;
-    }
   }
 }

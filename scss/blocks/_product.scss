@@ -1,11 +1,4 @@
 .product {
-  margin-top: 43px;
-  @include tablet {
-    margin-top: 32px;
-  }
-  @include mobile {
-    margin-top: 20px;
-  }
   &__main {
     margin-top: 56px;
     display: flex;
@@ -129,7 +122,8 @@
       &.popup {
         position: fixed;
         width: 100%;
-        height: 95%;
+        height: 100%;
+        overflow: hidden;
         background: rgba(15, 15, 15, 0.6);
         backdrop-filter: blur(17px);
         z-index: 50;
@@ -159,6 +153,12 @@
             &:hover {
               cursor: pointer;
             }
+            @include tablet {
+              right: 5px;
+            }
+            @include mobile {
+              top: 5px;
+            }
           }
           &-slide {
             & .img-wrapper {
@@ -173,6 +173,16 @@
                 width: auto;
                 height: 100%;
               }
+              @include mobile {
+                width: 100%;
+                padding: 0 5px;
+                height: auto;
+
+                & img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
             }
           }
           &-window {
@@ -182,6 +192,7 @@
             &::after {
               display: none;
             }
+            height: auto;
             width: auto;
             & svg {
               width: 69px;
@@ -190,12 +201,21 @@
                 stroke: white;
               }
             }
+            transform: translateY(-50%);
             top: 50%;
             &-prev {
               left: 103px;
             }
             &-next {
               right: 103px;
+            }
+            @include tablet {
+              &-prev {
+                left: 5px;
+              }
+              &-next {
+                right: 5px;
+              }
             }
           }
           &-pagination {
@@ -242,7 +262,7 @@
         & p {
           font-weight: 400;
           font-size: 16px;
-          line-height: 20px;
+          line-height: 24px;
           color: $text;
           &:not(:last-child) {
             margin-bottom: 16px;

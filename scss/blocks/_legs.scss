@@ -1,4 +1,5 @@
 .legs {
+  overflow: visible;
   &__list {
     margin-top: 60px;
     @include tablet {
@@ -195,7 +196,7 @@
       }
     }
   }
-  & .button_orange:last-child {
+  & .button_orange:nth-child(3) {
     margin: 100px auto 0px;
     @include tablet {
       margin-top: 60px;

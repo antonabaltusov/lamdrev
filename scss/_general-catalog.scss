@@ -1,8 +1,4 @@
 .catalog {
-  margin-top: 43px;
-  @include tablet {
-    margin-top: 20px;
-  }
   &__list {
     max-width: 1000px;
     margin: 0 auto;

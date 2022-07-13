@@ -87,7 +87,8 @@
           & h5 {
             display: none;
           }
-          & p {
+          & p,
+          a {
             font-weight: 400;
             font-size: 10px;
             line-height: 12px;
@@ -176,6 +177,9 @@
         font-size: 14px;
         line-height: 16px;
         color: #ed6b40;
+        &.empty {
+          color: #8b8b8b;
+        }
       }
       @include mobile {
         & p {
@@ -194,6 +198,10 @@
           background: #ed6b40;
           color: white;
           border-radius: 50%;
+          &.empty {
+            display: none;
+            color: #8b8b8b;
+          }
         }
         & span {
           display: none;

@@ -8,6 +8,10 @@
   }
   & .block__info {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
     @include mobile {
       display: none;
       height: fit-content;
@@ -41,9 +45,8 @@
       }
     }
     & .button_orange {
-      position: absolute;
-      left: 0;
-      bottom: 0;
+      position: relative;
+      margin-top: 10px;
       @include tablet {
         display: inline-flex;
         margin-top: 32px;

@@ -1,8 +1,9 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
-
+  speed: 800,
   autoHeight: true,
+  touchRatio: 2,
   // If we need pagination
 
   // Navigation arrows

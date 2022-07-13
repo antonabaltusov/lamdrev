@@ -30,6 +30,8 @@ function createSwiper() {
   }
   swiper = new Swiper(".swiper", {
     loop: true,
+    speed: 800,
+    touchRatio: 2,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -58,7 +60,7 @@ buttonClosePopup.innerHTML = "Закрыть";
 
 function removePopup(e) {
   if (
-    !e.target.closest(".popup") ||
+    (!e.target.closest("img") && !e.target.closest(".swiper-button")) ||
     e.target.classList.contains("popup-close")
   ) {
     let popup = document.querySelector(".popup");
@@ -87,11 +89,9 @@ function addPopup() {
   }, 0);
 }
 function bindListenerOpenPopup() {
-  if (document.documentElement.clientWidth > 1200) {
-    document.querySelectorAll(".swiper-slide img").forEach((img) => {
-      console.log(img);
-      img.addEventListener("click", addPopup);
-    });
-  }
+  document.querySelectorAll(".swiper-slide img").forEach((img) => {
+    console.log(img);
+    img.addEventListener("click", addPopup);
+  });
 }
 bindListenerOpenPopup();

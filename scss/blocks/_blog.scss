@@ -32,13 +32,7 @@
     }
   }
   &_full {
-    margin-top: 43px;
-    @include tablet {
-      margin-top: 32px;
-    }
-    @include mobile {
-      margin-top: 20px;
-    }
+    margin-top: 0px;
     & .nuv {
       margin-bottom: 40px;
       @include tablet {
@@ -76,6 +70,7 @@
   &__item {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
     &:hover {
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     }
@@ -119,7 +114,7 @@
         margin-top: 10px;
         flex-direction: column;
       }
-      & a {
+      & .a {
         font-weight: 400;
         font-size: 12px;
         line-height: 15px;

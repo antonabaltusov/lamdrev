@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Карточка товара</title>
+  <link rel="icon" href="./img/svg/list-style.svg" type="image/svg">
+  <link rel="shortcut icon" href="./img/svg/list-style.svg" type="image/svg">
   <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <script src="./swiper/swiper-bundle.min.js" defer></script>
@@ -82,7 +84,7 @@
             </svg>
           </button>
           <div class="counter">
-            <p>Выберите количесвто</p>
+            <p>Выберите количество</p>
             <div class="counter__block">
               <button>
                 <svg width="8" height="3" viewBox="0 0 8 3" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -131,26 +133,26 @@
         </svg>
       </a>
       <p>
-        Чтобы уточнить цену и заказать комплекты для ученической мебели с доставкой по России, звоните нам +7 (912)
-        758-47-33.
+        Чтобы уточнить цену и заказать комплекты для ученической мебели с доставкой по России, звоните нам <a
+          href="tel: +79127584733">+7 (912) 758-47-33</a>.
       </p>
     </div>
     <div class="product__exemples">
       <h2>Примеры наших товаров</h2>
       <div class="product__exemples_list">
-        <a href="" class="product__exemples_item">
+        <a href="./product.php" class="product__exemples_item">
           <img width="286px" height="351px" src="./img/Rectangle14.webp" data-originalres="jpg" alt="">
           <p>МОДЕЛЬ 1.1</p>
         </a>
-        <a href="" class="product__exemples_item">
+        <a href="./product.php" class="product__exemples_item">
           <img width="286px" height="351px" src="./img/Rectangle15.webp" data-originalres="jpg" alt="">
           <p>МОДЕЛЬ 1.1</p>
         </a>
-        <a href="" class="product__exemples_item">
+        <a href="./product.php" class="product__exemples_item">
           <img width="286px" height="351px" src="./img/Rectangle16.webp" data-originalres="jpg" alt="">
           <p>МОДЕЛЬ 1.1</p>
         </a>
-        <a href="" class="product__exemples_item">
+        <a href="./product.php" class="product__exemples_item">
           <img width="286px" height="351px" src="./img/Rectangle17.webp" data-originalres="jpg" alt="">
           <p>МОДЕЛЬ 1.1</p>
         </a>

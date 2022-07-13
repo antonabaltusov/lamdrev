@@ -1,12 +1,6 @@
 .ordering {
-  margin-top: 73px;
-  @include tablet {
-    margin-top: 80px;
-  }
-  @include mobile {
-    margin-top: 70px;
-  }
   & h1 {
+    margin-top: 30px;
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;

@@ -108,14 +108,14 @@ function renderItem(item) {
             </svg>
           </button>
           <div class="counter">
-            <p>Выберите количесвто</p>
+            <p>Выберите количество</p>
             <div class="counter__block">
               <button>
                 <svg width="8" height="3" viewBox="0 0 8 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.857969 2.24V0.752H7.14597V2.24H0.857969Z" fill="black" />
                 </svg>
               </button>
-              <p>${item.counter}</p>
+              <p>${item.counter} шт.</p>
               <button>
                 <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.24166 10.688V0.511999H6.75366V10.688H5.24166ZM0.777656 6.32V4.904H11.2177V6.32H0.777656Z"

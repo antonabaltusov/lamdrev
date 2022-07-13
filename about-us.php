@@ -6,7 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>О нас</title>
+  <link rel="icon" href="./img/svg/list-style.svg" type="image/svg">
+  <link rel="shortcut icon" href="./img/svg/list-style.svg" type="image/svg">
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+  <script src="./swiper/swiper-bundle.min.js" defer></script>
+  <script src="./js/about-us.js" defer></script>
 
 </head>
 
@@ -14,6 +19,8 @@
   <?php
         include "include/header.php";
     ?>
+
+
   <main class="about-us container">
     <div class="nuv">
       <p><a href="./">Главная</a> / О нас </p>
@@ -144,8 +151,8 @@
     <div class="about-us__certificate">
       <h2>Сертификаты</h2>
       <div>
-        <img width="388px" height="531px" src="./img/Rectangle73.webp" data-originalres="jpg" alt="Сертификаты">
-        <img width="388px" height="531px" src="./img/Rectangle74.webp" data-originalres="jpg" alt="Сертификаты">
+        <img width="388px" height="531px" src="./img/Rectangle73.png" alt="Сертификаты">
+        <img width="388px" height="531px" src="./img/Rectangle74.png" alt="Сертификаты">
       </div>
     </div>
     <div class="about-us__presentation">
@@ -215,8 +222,42 @@
         <img width="592px" height="456px" src="./img/production/prod11.webp" data-originalres="jpg">
         <img width="592px" height="456px" src="./img/production/prod12.webp" data-originalres="jpg">
       </div>
+      <a href="#" class="button_up">
+        <svg width="24" height="51" viewBox="0 0 24 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.0607 0.939339C12.4749 0.353554 11.5251 0.353554 10.9393 0.939339L1.3934 10.4853C0.807611 11.0711 0.807611 12.0208 1.3934 12.6066C1.97919 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.939339ZM13.5 51L13.5 2H10.5L10.5 51H13.5Z"
+            fill="#ED6B40" />
+        </svg>
+      </a>
     </div>
   </main>
+  <div class="popup">
+    <div class="swiper">
+      <button class="popup-close">Закрыть</button>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="img-wrapper">
+            <img width="388px" height="531px" src="./img/Rectangle73.png" alt="Сертификаты">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-wrapper">
+            <img width="388px" height="531px" src="./img/Rectangle74.png" alt="Сертификаты">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button swiper-button-prev">
+        <svg width="32" height="59" viewBox="0 0 32 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30.5 58L2 29.5L30.5 1" stroke="black" stroke-width="2" />
+        </svg>
+      </div>
+      <div class="swiper-button swiper-button-next">
+        <svg width="31" height="59" viewBox="0 0 31 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L29.5 29.5L1 58" stroke="black" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+  </div>
 
   <?php
         include "include/footer.php";
