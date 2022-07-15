@@ -20,18 +20,21 @@
     color: #272727;
   }
   &__contacts {
+    height: 100%;
     display: flex;
     align-items: flex-start;
     @include mobile {
       width: 100%;
+      flex-direction: column-reverse;
     }
     @include tablet {
       flex-direction: column;
     }
-    @include mobile {
-      flex-direction: column-reverse;
-    }
     & div {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       &:first-child {
         margin-right: 41px;
         & a {
@@ -48,6 +51,17 @@
           display: flex;
           justify-content: flex-end;
           width: 100%;
+          & a {
+            background: #2dd067;
+            padding: 10px 10px 10px 6px;
+            color: white;
+            & svg path {
+              fill: white;
+            }
+            &:last-child {
+              display: none;
+            }
+          }
         }
         @include tablet {
           & h5 {
@@ -62,19 +76,6 @@
             color: $grey2;
             & span {
               color: $grey2;
-            }
-          }
-        }
-        @include mobile {
-          & a {
-            background: #2dd067;
-            padding: 10px 10px 10px 6px;
-            color: white;
-            & svg path {
-              fill: white;
-            }
-            &:last-child {
-              display: none;
             }
           }
         }
