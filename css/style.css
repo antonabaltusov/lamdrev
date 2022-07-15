@@ -2502,20 +2502,20 @@ footer {
 .blog__background {
   position: absolute;
   width: 60%;
-  top: 10px;
+  top: 60px;
   right: 0;
   z-index: -1;
 }
 
 @media (max-width: 1200px) {
   .blog__background {
-    top: 28px;
+    top: 65px;
   }
 }
 
 @media (max-width: 767px) {
   .blog__background {
-    width: 75%;
+    width: 85%;
     top: 40px;
   }
 }
@@ -2528,7 +2528,7 @@ footer {
 
 @media (max-width: 400px) {
   .blog__background {
-    top: 85px;
+    top: 75px;
   }
 }
 
@@ -2903,15 +2903,21 @@ footer {
 .study-complects__background {
   position: absolute;
   width: 60%;
-  top: -15px;
+  top: 40px;
   right: 0;
   z-index: -1;
 }
 
+@media (max-width: 1200px) {
+  .study-complects__background {
+    top: 25px;
+  }
+}
+
 @media (max-width: 767px) {
   .study-complects__background {
-    width: 75%;
-    top: 15px;
+    width: 85%;
+    top: 35px;
   }
 }
 

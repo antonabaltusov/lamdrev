@@ -14,21 +14,21 @@
   &__background {
     position: absolute;
     width: 60%;
-    top: 10px;
+    top: 60px;
     right: 0;
     z-index: -1;
     @include tablet {
-      top: 28px;
+      top: 65px;
     }
     @include mobile {
-      width: 75%;
+      width: 85%;
       top: 40px;
     }
     @media (max-width: 550px) {
       top: 65px;
     }
     @media (max-width: 400px) {
-      top: 85px;
+      top: 75px;
     }
   }
   &_full {
